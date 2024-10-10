@@ -3,7 +3,7 @@ package app;
 public class CalcCostDelivery extends CalcCostBase {
 
     // Вартість доставки
-    private final static double DELIVERY_PRICE = 10;
+    private final static double DELIVERY_PRICE = 7;
 
     // Розрахунок вартості товару,
     // з урахуванням вартості доставки
