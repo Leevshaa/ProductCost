@@ -1,2 +1,15 @@
-package app;public class CalcCostDelivery {
+package app;
+
+public class CalcCostDelivery extends CalcCostBase {
+
+    // Вартість доставки
+    private final static double DELIVERY_PRICE = 10;
+
+    // Розрахунок вартості товару,
+    // з урахуванням вартості доставки
+    @Override
+    public double calcCost(Product product) {
+        return product.getQuota() * product.getPrice()
+                + DELIVERY_PRICE;
+    }
 }
